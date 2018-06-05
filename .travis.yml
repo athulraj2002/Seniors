@@ -1,0 +1,5 @@
+language: php
+install: true
+before_install:
+sudo apt-get install git-ftp
+script: ./deploy-script.sh
