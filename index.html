@@ -169,8 +169,9 @@ background: url('face.jpg');
         $('#front').delay(200).animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
     });
     $("._3dbox").mouseleave(function(){
-        $('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast");
-        $("._3dbox").delay(500).css({ transform:'rotateX(-30deg) rotateY(+45deg)'});
+        $('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
+        $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'}).delay(2000);
+});
     });
 });
 
