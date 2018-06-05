@@ -235,18 +235,5 @@ background: url('face.jpg');
 
 
 </body>
-<script>
-  $(document).ready(function(){
-    $("._3dface").hover(function(){
-        $("._3dbox").css({ transform:'rotateX(-360deg)'});
-        $('._3dface--front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
-    });
-    $("._3dbox").mouseleave(function(){
-        $('._3dface--front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
-        $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'}).delay(2000);
-});
-    });
-});
 
-</script>
 </html>
