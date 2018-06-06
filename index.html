@@ -50,7 +50,7 @@ body {
   display: inline-block;
   margin-top: 50px;
   margin-left: 45%;
-  -webkit-box-reflect:below 0px linear-gradient(red, yellow, blue);
+ 
 }
 ._3dbox {
   display: inline-block;
@@ -71,6 +71,7 @@ body {
   color: #333;
   line-height: 250px;
   opacity: 0.8;
+
 }
 ._3dface--front {
   width: 250px;
@@ -158,10 +159,10 @@ background: url('face.jpg');
     <div class="col-md-4">
         <div class="space3d" >   
               <div class="_3dbox">
-                <div class="_3dface _3dface--front" id="front"></div>
+                <div class="_3dface _3dface--front" id="front" style="-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(RGBA(0, 0, 0, .2)));" ></div>
                 <div class="_3dface _3dface--top" id="top"></div>
-                <div class="_3dface _3dface--bottom"></div>
-                <div class="_3dface _3dface--left" id="left"></div>
+                <div class="_3dface _3dface--bottom" ></div>
+                <div class="_3dface _3dface--left" id="left" style="-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(RGBA(0, 0, 0, .2)));"></div>
                 <div class="_3dface _3dface--right"></div>
                 <div class="_3dface _3dface--back"></div>
               </div>
