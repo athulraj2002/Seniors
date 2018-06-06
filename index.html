@@ -136,10 +136,6 @@ background: url('face.jpg');
   background-size: auto 100%;
 }
 
-.hide{
-  display: none;
-}
-
 #front{
   -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 1)));
 }
@@ -151,6 +147,9 @@ background: url('face.jpg');
     color: white;
     background-color: #d0872f;
     font-size: 33px;
+}
+#desc1,#desc2,#desc3{
+	display:none;
 }
 </style>
 
@@ -185,11 +184,11 @@ background: url('face.jpg');
             <h3 style="font-size: 58px;font-family: 'Doppio One', sans-serif;">FOLLOW YOUR</h3>
             <h1 style="font-size: 120px;font-family: 'Doppio One', sans-serif;">DREAM</h1>
           </div>
-          <div class="col-md-12 hide" id="desc1">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets. 
+          <div class="col-md-12" id="desc1">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets. 
           </div>
-          <div class="col-md-12 hide" id="desc2">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
+          <div class="col-md-12" id="desc2" >Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
           </div>
-          <div class="col-md-12 hide" id="desc3">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
+          <div class="col-md-12" id="desc3">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
           </div>
     </div>
   </div>
@@ -207,29 +206,29 @@ background: url('face.jpg');
 		$("._3dbox").css({ transform:'rotateX(-360deg)'});
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
-		$("#desc1").removeClass('hide');
+		$("#desc1").show();
 	});
 
 	$("#top").hover(function(){
 		$("._3dbox").css({ transform:'rotateX(-90deg)'});      
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
-		$("#desc2").removeClass('hide');    
+		$("#desc2").show();
 	});
 
 	$("#left").hover(function(){
 		$("._3dbox").css({ transform:'rotateY(+90deg)'});       
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
-		$("#desc3").removeClass('hide');    
+		$("#desc3").show();   
 	});
 
 
-	$("._3dbox").mouseleave(function(){
+	$(".space3d").mouseleave(function(){
 		$("#fyd").delay('1500').show('slow');
-		$("#desc1").delay('500').addClass('hide');
-		$("#desc2").delay('500').addClass('hide');
-		$("#desc3").delay('500').addClass('hide');
+		$("#desc1").delay('500').hide();
+		$("#desc2").delay('500').hide();
+		$("#desc3").delay('500').hide();
 		$(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'50px'},'200',function(){
 		$("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)',});
 	});
