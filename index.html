@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Doppio+One" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title></title>
 </head>
 <style type="text/css">
@@ -20,7 +26,6 @@
 body {
   color: #333;
   padding: 20px;
-  text-align: center;
   font-family: Arial;
 }
 .separator {
@@ -43,6 +48,9 @@ body {
   height: 250px;
   text-align: center;
   display: inline-block;
+  margin-top: 50px;
+  margin-left: 45%;
+  -webkit-box-reflect:below 0px linear-gradient(red, yellow, blue);
 }
 ._3dbox {
   display: inline-block;
@@ -128,6 +136,9 @@ background: url('face.jpg');
   background-size: auto 100%;
 }
 
+.hide{
+  display: none;
+}
 </style>
 
 	
@@ -142,19 +153,33 @@ background: url('face.jpg');
 
 <div class="separator"></div>
 
-
-<div class="space3d">
-        
-    
-    <div class="_3dbox">
-      <div class="_3dface _3dface--front" id="front"></div>
-      <div class="_3dface _3dface--top"></div>
-      <div class="_3dface _3dface--bottom"></div>
-      <div class="_3dface _3dface--left"></div>
-      <div class="_3dface _3dface--right"></div>
-      <div class="_3dface _3dface--back"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="space3d" >   
+              <div class="_3dbox">
+                <div class="_3dface _3dface--front" id="front"></div>
+                <div class="_3dface _3dface--top" id="top"></div>
+                <div class="_3dface _3dface--bottom"></div>
+                <div class="_3dface _3dface--left" id="left"></div>
+                <div class="_3dface _3dface--right"></div>
+                <div class="_3dface _3dface--back"></div>
+              </div>
+        </div>
     </div>
-    
+    <div class="col-md-8">
+          <div class="col-md-12" id="fyd" style="text-align: center;">
+            <h3 style="font-size: 58px;font-family: 'Doppio One', sans-serif;">FOLLOW YOUR</h3>
+            <h1 style="font-size: 120px;font-family: 'Doppio One', sans-serif;">DREAM</h1>
+          </div>
+          <div class="col-md-12 hide" id="desc1">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets. 
+          </div>
+          <div class="col-md-12 hide" id="desc2">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
+          </div>
+          <div class="col-md-12 hide" id="desc3">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
+          </div>
+    </div>
+  </div>
 </div>
 
 <div class="separator"></div>
@@ -164,17 +189,40 @@ background: url('face.jpg');
 </body>
 <script>
   $(document).ready(function(){
+    $(".space3d").css({zoom:'0.8'});
     $("#front").hover(function(){
         $("._3dbox").css({ transform:'rotateX(-360deg)'});
-        $(".space3d").animate({ zoom:'1.4'},'slow');
+        $(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
+        $("#fyd").hide('slow');
+        $("#desc1").removeClass('hide');
+        //$('#front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
+    });
+    $("._3dbox").mouseleave(function(){
+        $("#fyd").delay('1500').show('slow');
+        $("#desc1").delay('500').addClass('hide');
+        //$('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
+        $(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'50px'},'200',function(){
+            $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)',});
+
+        });
+//});
+    });
+
+
+/*
+    $("#top").hover(function(){
+        $("._3dbox").css({ transform:'rotateX(-360deg)'});
+        $(".space3d").animate({ zoom:'0.6'},'slow');
         //$('#front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
     });
     $("._3dbox").mouseleave(function(){
         //$('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
-        $(".space3d").animate({ zoom:'1'},'slow');
-        $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'}).delay(2000);
+        $(".space3d").delay(50).animate({ zoom:'0.4'},'200',function(){
+            $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'});
+
+        });
 //});
-    });
+    });*/
 });
 
 </script>
