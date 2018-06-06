@@ -146,6 +146,12 @@ background: url('face.jpg');
 #left{
   -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 1)));
 }
+
+._3dface span{
+    color: white;
+    background-color: #d0872f;
+    font-size: 33px;
+}
 </style>
 
 	
@@ -165,10 +171,10 @@ background: url('face.jpg');
     <div class="col-md-4">
         <div class="space3d" >   
               <div class="_3dbox">
-                <div class="_3dface _3dface--front" id="front" ></div>
-                <div class="_3dface _3dface--top" id="top"></div>
+                <div class="_3dface _3dface--front" id="front" ><span>CONSULTING</span></div>
+                <div class="_3dface _3dface--top" id="top"><span>MENTORING</span></div>
                 <div class="_3dface _3dface--bottom" ></div>
-                <div class="_3dface _3dface--left" id="left"></div>
+                <div class="_3dface _3dface--left" id="left"><span>COACHING</span></div>
                 <div class="_3dface _3dface--right"></div>
                 <div class="_3dface _3dface--back"></div>
               </div>
@@ -197,39 +203,43 @@ background: url('face.jpg');
 <script>
   $(document).ready(function(){
     $(".space3d").css({zoom:'0.8'});
-    $("#front").hover(function(){
-        $("._3dbox").css({ transform:'rotateX(-360deg)'});
-        $(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
-        $("#fyd").hide('slow');
-        $("#desc1").removeClass('hide');
-        //$('#front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
-    });
-    $("._3dbox").mouseleave(function(){
-        $("#fyd").delay('1500').show('slow');
-        $("#desc1").delay('500').addClass('hide');
-        //$('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
-        $(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'50px'},'200',function(){
-            $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)',});
+	$("#front").hover(function(){
+		$("._3dbox").css({ transform:'rotateX(-360deg)'});
+		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
+		$("#fyd").hide('slow');
+		$("#desc1").removeClass('hide');
+	});
 
-        });
+	$("#top").hover(function(){
+		$("._3dbox").css({ transform:'rotateX(-90deg)'});      
+		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
+		$("#fyd").hide('slow');
+		$("#desc2").removeClass('hide');    
+	});
+
+	$("#left").hover(function(){
+		$("._3dbox").css({ transform:'rotateY(+90deg)'});       
+		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
+		$("#fyd").hide('slow');
+		$("#desc3").removeClass('hide');    
+	});
+
+
+	$("._3dbox").mouseleave(function(){
+		$("#fyd").delay('1500').show('slow');
+		$("#desc1").delay('500').addClass('hide');
+		$("#desc2").delay('500').addClass('hide');
+		$("#desc3").delay('500').addClass('hide');
+		$(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'50px'},'200',function(){
+		$("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)',});
+	});
 //});
     });
 
 
-/*
-    $("#top").hover(function(){
-        $("._3dbox").css({ transform:'rotateX(-360deg)'});
-        $(".space3d").animate({ zoom:'0.6'},'slow');
-        //$('#front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
-    });
-    $("._3dbox").mouseleave(function(){
-        //$('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
-        $(".space3d").delay(50).animate({ zoom:'0.4'},'200',function(){
-            $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'});
+ 
 
-        });
-//});
-    });*/
+
 });
 
 </script>
