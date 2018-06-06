@@ -166,12 +166,14 @@ background: url('face.jpg');
   $(document).ready(function(){
     $("#front").hover(function(){
         $("._3dbox").css({ transform:'rotateX(-360deg)'});
-        $('#front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
+        $(".space3d").animate({ zoom:'1.4'},'slow');
+        //$('#front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
     });
     $("._3dbox").mouseleave(function(){
-        $('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
+        //$('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
+        $(".space3d").animate({ zoom:'1'},'slow');
         $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'}).delay(2000);
-});
+//});
     });
 });
 
