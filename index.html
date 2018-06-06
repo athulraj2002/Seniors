@@ -203,21 +203,21 @@ background: url('face.jpg');
 <script>
   $(document).ready(function(){
     $(".space3d").css({zoom:'0.8'});
-	$("#front").hover(function(){
+	$("#front span").hover(function(){
 		$("._3dbox").css({ transform:'rotateX(-360deg)'});
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
 		$("#desc1").show();
 	});
 
-	$("#top").hover(function(){
+	$("#top span").hover(function(){
 		$("._3dbox").css({ transform:'rotateX(-90deg)'});      
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
 		$("#desc2").show();
 	});
 
-	$("#left").hover(function(){
+	$("#left span").hover(function(){
 		$("._3dbox").css({ transform:'rotateY(+90deg)'});       
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
