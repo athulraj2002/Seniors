@@ -139,6 +139,13 @@ background: url('face.jpg');
 .hide{
   display: none;
 }
+
+#front{
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 1)));
+}
+#left{
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 1)));
+}
 </style>
 
 	
@@ -158,10 +165,10 @@ background: url('face.jpg');
     <div class="col-md-4">
         <div class="space3d" >   
               <div class="_3dbox">
-                <div class="_3dface _3dface--front" id="front" style="-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(RGBA(0, 0, 0, .2)));" ></div>
-                <div class="_3dface _3dface--top" id="top" style="-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(RGBA(0, 0, 0, .2)));"></div>
+                <div class="_3dface _3dface--front" id="front" ></div>
+                <div class="_3dface _3dface--top" id="top"></div>
                 <div class="_3dface _3dface--bottom" ></div>
-                <div class="_3dface _3dface--left" id="left" style="-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(RGBA(0, 0, 0, .2)));"></div>
+                <div class="_3dface _3dface--left" id="left"></div>
                 <div class="_3dface _3dface--right"></div>
                 <div class="_3dface _3dface--back"></div>
               </div>
