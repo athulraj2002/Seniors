@@ -50,7 +50,7 @@ body {
   display: inline-block;
   margin-top: 50px;
   margin-left: 45%;
-  -webkit-box-reflect:below 0px linear-gradient(red, yellow, blue);
+  //-webkit-box-reflect:below 0px linear-gradient(red, yellow, blue);
 }
 ._3dbox {
   display: inline-block;
@@ -139,6 +139,12 @@ background: url('face.jpg');
 .hide{
   display: none;
 }
+#front{
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 1)));
+}
+#left{
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 1)));
+}
 </style>
 
 	
@@ -209,20 +215,24 @@ background: url('face.jpg');
     });
 
 
-/*
-    $("#top").hover(function(){
-        $("._3dbox").css({ transform:'rotateX(-360deg)'});
-        $(".space3d").animate({ zoom:'0.6'},'slow');
+    
+     $("#top").hover(function(){
+        $("._3dbox").css({ transform:'rotateY(+90deg) rotateZ(-90deg)'});
+        $(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
+        $("#fyd").hide('slow');
+        $("#desc1").removeClass('hide');
         //$('#front').animate({ height:'500px',width:'500px',position:'absolute',left:'-140px' },"slow");
     });
     $("._3dbox").mouseleave(function(){
+        $("#fyd").delay('1500').show('slow');
+        $("#desc1").delay('500').addClass('hide');
         //$('#front').animate({ height:'250px',width:'250px',position:'absolute',left:'0px' },"fast",function(){
-        $(".space3d").delay(50).animate({ zoom:'0.4'},'200',function(){
-            $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'});
+        $(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'50px'},'200',function(){
+            $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)',});
 
         });
 //});
-    });*/
+    });
 });
 
 </script>
