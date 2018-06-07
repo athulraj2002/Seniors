@@ -22,7 +22,7 @@
 <!-- CONTROLS -->
       
 <div class="preloader">
-    <center><span><img src="O.png">Loading..</span></center>
+    <center><span><img class="rotating" src="O.png" style="width:200px"></span></center>
 </div>
 <div class="container">
 	<div class="row header">
@@ -61,10 +61,10 @@
         </div>
 	</div>
 </div>
-<div class="container" style="padding-top:40px">
+<div class="container" style="color:white;padding-top:100px ;padding-bottom:150px;background: blue url('banner.jpg');max-width:100%;background-size:150%;background-position: -10px 0px">
   <div class="row">
     <div class="col-md-4">
-        <div class="space3d" >   
+        <div class="space3d">   
               <div class="_3dbox">
                 <div class="_3dface _3dface--front" id="front" ><span>CONSULTING</span></div>
                 <div class="_3dface _3dface--top" id="top"><span>MENTORING</span></div>
@@ -90,7 +90,6 @@
   </div>
 </div>
 
-<img width="100%;padding-top:1000px" src='https://unsplash.it/10/10/?random' />
 
 </body>
 <script>
@@ -99,7 +98,9 @@
   $(window).on("load",function(){
     //alert("hello");
     $("body").css({overflow:'visible'});
-    $(".preloader").hide();
+    $(".preloader").animate({top:'-1000px'},'slow',function() {
+        $(".preloader").hide();
+    });
     $(".space3d").css({zoom:'0.8'});
 	$("#front span").hover(function(){
 		$("._3dbox").css({ transform:'rotateX(-360deg)'});
