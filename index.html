@@ -65,13 +65,13 @@
   <div class="row">
     <div class="col-md-4">
         <div class="space3d">   
-              <div class="_3dbox">
+              <div class="_3dbox cuberotate">
                 <div class="_3dface _3dface--front" id="front" ><span>CONSULTING</span></div>
                 <div class="_3dface _3dface--top" id="top"><span>MENTORING</span></div>
-                <div class="_3dface _3dface--bottom" ></div>
+                <div class="_3dface _3dface--bottom" > <span>MENTORING</span></div>
                 <div class="_3dface _3dface--left" id="left"><span>COACHING</span></div>
-                <div class="_3dface _3dface--right"></div>
-                <div class="_3dface _3dface--back"></div>
+                <div class="_3dface _3dface--right" id="right2"> <span>COACHING</span></div>
+                <div class="_3dface _3dface--back" id="left2" ><span>MENTORING</span></div>
               </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
     </div>
   </div>
 </div>
-
+<img style="width:100;display:none" src='https://unsplash.it/10/10/?random' />
 
 </body>
 <script>
@@ -103,6 +103,7 @@
     });
     $(".space3d").css({zoom:'0.8'});
 	$("#front span").hover(function(){
+        $("._3dbox").removeClass('cuberotate');
 		$("._3dbox").css({ transform:'rotateX(-360deg)'});
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
@@ -110,14 +111,16 @@
 	});
 
 	$("#top span").hover(function(){
-		$("._3dbox").css({ transform:'rotateX(-90deg)'});      
+        $("._3dbox").removeClass('cuberotate');      
+		$("._3dbox").css({ transform:'rotateX(-90deg)'});
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
 		$("#desc2").show();
 	});
 
 	$("#left span").hover(function(){
-		$("._3dbox").css({ transform:'rotateY(+90deg)'});       
+        $("._3dbox").removeClass('cuberotate');  
+		$("._3dbox").css({ transform:'rotateY(+90deg)'});
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
 		$("#desc3").show();   
@@ -130,7 +133,9 @@
 		$("#desc2").delay('500').hide();
 		$("#desc3").delay('500').hide();
 		$(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'50px'},'200',function(){
-		$("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)',});
+		$.when(function(){$("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)',})}).then(function(){
+            $("._3dbox").addClass('cuberotate');
+        });
 	});
 //});
     });
