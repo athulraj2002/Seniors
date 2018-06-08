@@ -66,18 +66,18 @@
       </div>
 	</div>
 </div>
-<div class="container-fluid" style="background-color: orange">
+<div class="container-fluid" style="background-color: orange;">
 <div class="container" style="color:white;padding-top:100px ;padding-bottom:150px;max-width:100%;background-size:150%;background-position: -10px 0px">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="position:static">
         <div class="space3d">   
               <div class="_3dbox">
                 <div class="_3dface _3dface--front" id="front" ><span>CONSULTING</span></div>
                 <div class="_3dface _3dface--top" id="top"><span>MENTORING</span></div>
-                <div class="_3dface _3dface--bottom" > <span>MENTORING</span></div>
+                <div class="_3dface _3dface--bottom"> <span>MENTORING</span></div>
                 <div class="_3dface _3dface--left" id="left"><span>COACHING</span></div>
-                <div class="_3dface _3dface--right"> <span>COACHING</span></div>
-                <div class="_3dface _3dface--back" ><span>MENTORING</span></div>
+                <div class="_3dface _3dface--right" id="right"> <span>COACHING</span></div>
+                <div class="_3dface _3dface--back" id="right2"><span>MENTORING</span></div>
               </div>
         </div>
     </div>
@@ -342,11 +342,19 @@ There is  a reason that students who study abroad cannot stop talking about it. 
 <script>
   $(window).scrollTop(0);
   $("body").css({overflow:'hidden'});
+  $("._3dbox").addClass("cuberotate");
+  $(".space3d").css({zoom:'0.8'});
+  $(".loaderimage").css({display:"none"});
 
   $(window).on("load",function(){
     //alert("hello");
-  $(window).scrollTop(0);
+    $(window).scrollTop(0);
     $("body").css({overflow:'visible'});
+    $("._3dbox").removeClass("cuberotate");
+    $(".space3d").animate({left:'20%'},'slow',function(){
+        $(".space3d").addClass('space3d-static');
+    });
+    //$(".space3d").css({position: "static"});
    /*(".preloader").animate({top:'-1000px'},'slow',function() {
         $(".preloader").hide();
     });*/
@@ -357,13 +365,12 @@ There is  a reason that students who study abroad cannot stop talking about it. 
     });
     $(".rightscreen").animate({right:"-100%"},'slow');
     $(".loaderimage").css({display:"none"});
-    $(".space3d").css({zoom:'0.8'});
 	$("#front span").hover(function(){
         //$("._3dbox").removeClass('cuberotate');
 		$("._3dbox").css({ transform:'rotateX(-360deg)'});
 		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
 		$("#fyd").hide('slow');
-		$("#desc1").show();
+		$("#desc1").show();1
 	});
 
 	$("#top span").hover(function(){
@@ -388,7 +395,7 @@ There is  a reason that students who study abroad cannot stop talking about it. 
 		$("#desc1").delay('500').hide();
 		$("#desc2").delay('500').hide();
 		$("#desc3").delay('500').hide();
-		$(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'50px'},'200',function(){
+		$(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'1%;'},'200',function(){
 		  $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'});
             //$("._3dbox").addClass('cuberotate');
         });
