@@ -136,7 +136,7 @@
     
   </div>
 </div>
-<div class="container" style="background-image: rgba(255,255,255,0.5) url('dream-and-reality.png');background-position:150px 0px;background-repeat: no-repeat;padding: 20px;margin-top: 100px">
+<div class="container" style="background-image: url('dream-and-reality.png');background-position:150px 0px;background-repeat: no-repeat;padding: 20px;margin-top: 100px">
   <h1 style="padding: 30px;text-align: center;background-color: #white;border-bottom: 2px solid #d07c04;font-size: 50px;color: #d07c04;" >Turn your Dreams into Reality</h1>
 <div class="container" style="padding: 20px;">
   <div class="container-fluid" style="padding: 20px;"></div>
@@ -145,9 +145,8 @@
 There is  a reason that students who study abroad cannot stop talking about it. Spending time abroad not only fulfills academic goals, but also lets you experience a new culture, language, and environment. Nailing down all the details can seem overwhelming, but lucky for you, SENIORS is here to help!</p>
 </div>
 </div>
-<div class="container-fluid" style="background-image: url('orange2.jpg');    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px -59px;">
+<div class="container-fluid" style="background-image: url('orange2.jpg');    background-size: 120% 120%;
+    background-repeat: no-repeat;">
 <div class="container">
   <h1 style="padding: 30px;text-align: center;border-bottom: 2px solid #d07c04;font-size: 50px;color: #d07c04;" >WHY Seniors Global?</h1>
 <div class="container" style="padding: 20px;">
@@ -158,7 +157,10 @@ There is  a reason that students who study abroad cannot stop talking about it. 
 <div class="container" style="padding: 20px;">
   <div class="container">
   <div class="row">
-    <div class="col-md-4 text-center" style="background-color: #d07c04;color: white;">
+    <div class="col-md-4 text-center" style="
+      color: #fbbc4a;
+    background-color: #ffffff82;
+    border: 1px solid orange;">
       <h3>Our Process</h3>
       <i class="material-icons" style="font-size: 150px; padding: 52px;">settings</i>
     </div>
@@ -348,8 +350,12 @@ There is  a reason that students who study abroad cannot stop talking about it. 
    /*(".preloader").animate({top:'-1000px'},'slow',function() {
         $(".preloader").hide();
     });*/
-    $(".leftscreen").animate({left:"100%"});
-    $(".rightscreen").animate({right:"100%"});
+    $(".leftscreen").animate({left:"-100%"},'slow',function(){
+        $(".leftscreen").css({display:"none"});
+        $(".rightscreen").css({display:"none"});
+    });
+    $(".rightscreen").animate({right:"-100%"},'slow');
+    $(".loaderimage").css({display:"none"});
     $(".space3d").css({zoom:'0.8'});
 	$("#front span").hover(function(){
         //$("._3dbox").removeClass('cuberotate');

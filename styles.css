@@ -226,7 +226,6 @@ li a:hover{
   height: 200px;
   max-width: 200px;
   margin-top: 50px;
-  background-color: #e69a10;
   
   border-radius: 20px;
   box-shadow: 4px 4px 15px 0px #7474747a;
@@ -264,7 +263,7 @@ figcaption{
 .rightscreen{
   position: absolute;
   top:0px;
-  left:50%;
+  right:0px;
   background-color: white;
   width:50%;
   height: 100%;
