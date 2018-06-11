@@ -231,7 +231,6 @@ li a:hover{
 }
 #test{
   height: 200px;
-  max-width: 200px;
   margin-top: 50px;
   
   border-radius: 20px;
@@ -277,4 +276,18 @@ figcaption{
   background-color: white;
   width:50%;
   height: 100%;
+}
+
+@media screen and (max-width: 600px){
+  .space3d{
+    display: none;
+  }
+  
+  p{
+    width:100%  !important;;
+    padding-right:0px !important;
+  }
+  #fyd h1{
+    font-size: 82px !important;
+  }
 }
