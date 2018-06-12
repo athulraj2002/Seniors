@@ -290,4 +290,12 @@ figcaption{
   #fyd h1{
     font-size: 82px !important;
   }
+  .surfacepro{
+    background-size:140% 105% !important;
+    background-position:0px 0px !important;
+  }
+  .arrow{
+    background-size: 155% 109% !important;
+    background-position:0px 0px !important;
+  }
 }
