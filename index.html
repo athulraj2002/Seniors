@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="orange">
 <!-- Windows Phone -->
@@ -114,7 +114,7 @@
     <div class="col-md-4" style="height: 300px;background-color: white;">
      <div class="row">
        <div class="col-md-3"></div>
-       <div class="col-md-6" id="test"  data-aos="fade-up" data-aos-once="true">
+       <div class="col-xs-8 col-xs-offset-2" id="test"  data-aos="fade-up" data-aos-once="true">
         <img src="coaching.png" style="height:150px;margin-top:20px;margin-left:15px;">
         <h4 style="color:#d07c04;margin-top: 50px; ">Coaching</h4>
        </div>
@@ -125,7 +125,7 @@
     <div class="col-md-4 orange" style="height: 300px;background-color: white;">
       <div class="row">
    <div class="col-md-3"></div>
-       <div class="col-md-6 " id="test"  data-aos="fade-up" data-aos-once="true">
+       <div class="col-xs-8 col-xs-offset-2 " id="test"  data-aos="fade-up" data-aos-once="true">
         <img src="mentoring.png" style="height: 136px;margin-top: 30px;">
         <h4 style="color:#d07c04;margin-top: 50px; ">Mentoring</h4>
        </div>
@@ -136,7 +136,7 @@
     <div class="col-md-4 white" style="height: 300px">
       <div class="row">
          <div class="col-md-3"></div>
-       <div class="col-md-6" id="test"  data-aos="fade-up" data-aos-once="true">
+       <div class="col-xs-8 col-xs-offset-2" id="test"  data-aos="fade-up" data-aos-once="true">
         <img src="consulting.png" style="height: 165px;margin-top: 10px;">
         <h4 style="color:#d07c04;margin-top: 50px;">Consulting</h4>
        </div>
@@ -336,7 +336,7 @@ There is  a reason that students who study abroad cannot stop talking about it. 
     <div class="col-md-4" id="1" style="height: 300px;background-color: white;">
      <div class="row">
        <div class="col-md-3"></div>
-       <div class="col-md-6" id="test"  data-aos="fade-up" data-aos-once="true">
+       <div class="col-xs-8 col-xs-offset-2" id="test"  data-aos="fade-up" data-aos-once="true">
         <img src="study.png" style="height:150px;margin-top:20px;margin-left:15px;">
         <h4 style="color:#034381;margin-top: 50px; ">STUDY ABROAD</h4>
        </div>
@@ -344,10 +344,10 @@ There is  a reason that students who study abroad cannot stop talking about it. 
      </div>
     </div>
 
-    <div class="col-md-4 orange" id="2" style="height: 300px;background-color: white;">
+    <div class="col-sm-4 orange" id="2" style="height: 300px;background-color: white;">
       <div class="row">
    <div class="col-md-3"></div>
-       <div class="col-md-6 " id="test" data-aos="fade-up" data-aos-once="true">
+       <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
         <img src="100.png" style="height: 136px;margin-top: 30px;">
         <h4 style="color:#034381;margin-top: 50px; ">100% SCHOLORSHIP</h4>
        </div>
@@ -358,7 +358,7 @@ There is  a reason that students who study abroad cannot stop talking about it. 
     <div class="col-md-4 white" id="3" style="height: 300px;background-color: white;">
       <div class="row">
          <div class="col-md-3"></div>
-       <div class="col-md-6" id="test" data-aos="fade-up" data-aos-once="true">
+       <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
         <img src="internship.png" style="height: 165px;margin-top: 10px;">
         <h4 style="color:#034381;margin-top: 50px; ">INTERNSHIP PROGRAM</h4>
        </div>
@@ -400,7 +400,7 @@ There is  a reason that students who study abroad cannot stop talking about it. 
 </body>
 <script>
   $(window).scrollTop(0);
-  $("body").css({overflow:'hidden'});
+  $("body").css({overflowY:'hidden'});
   $("._3dbox").addClass("cuberotate");
   $(".space3d").css({zoom:'0.8'});
   $(".loaderimage").css({display:"none"});
@@ -408,7 +408,7 @@ There is  a reason that students who study abroad cannot stop talking about it. 
   $(window).on("load",function(){
     //alert("hello");
     $(window).scrollTop(0);
-    $("body").css({overflow:'visible'});
+    $("body").css({overflowY:'visible'});
     $("._3dbox").removeClass("cuberotate");
     $(".space3d").animate({left:'20%'},'slow',function(){
         $(".space3d").addClass('space3d-static');

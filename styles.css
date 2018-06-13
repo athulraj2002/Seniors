@@ -279,10 +279,12 @@ figcaption{
 }
 
 @media screen and (max-width: 600px){
+  html,body{
+    //overflow-x: hidden !important;
+  }
   .space3d{
     display: none;
   }
-  
   p{
     width:100%  !important;;
     padding-right:0px !important;
@@ -291,11 +293,18 @@ figcaption{
     font-size: 82px !important;
   }
   .surfacepro{
-    background-size:140% 105% !important;
-    background-position:0px 0px !important;
+    background-size:268% 100% !important;
+    background-position:-303px 0px !important;
   }
   .arrow{
-    background-size: 155% 109% !important;
-    background-position:0px 0px !important;
+    background-size: 306% 109% !important;
+    background-position:-303px 0px !important;
+  }
+  h1{
+    padding:0px !important;
+  }
+  .container{
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
