@@ -1,493 +1,535 @@
-
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
-<!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="orange">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="orange">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="orange">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-<link href="https://fonts.googleapis.com/css?family=Doppio+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-<!-- Latest compiled and minified CSS -->
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<link rel="stylesheet" href="styles.css" type="text/css">
-	<title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="orange">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="orange">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="orange">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Doppio+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title></title>
 </head>
+
 <body>
-<!-- CONTROLS -->
-<div class="preloader">
-      <div class="loaderimage">
-        <center><span><img class="rotating" src="O.png" style="width:200px"></span></center>
-      </div>
-      <div class="leftscreen"></div>
-      <div class="rightscreen"></div>
-</div>
-      <div class="container-fluid" style="background-image: url('white2.jpg');">
-         <div class="container-fluid">
-  <div class="container">
-	<div class="row header"  data-aos="fade-up" data-aos-once="true">
-		<div class="col-md-2"><img style="width:200px; background-color:white;margin-top: -20px;
+    <!-- CONTROLS -->
+    <div class="preloader">
+        <div class="loaderimage">
+            <center><span><img class="rotating" src="O.png" style="width:200px"></span></center>
+        </div>
+        <div class="leftscreen"></div>
+        <div class="rightscreen"></div>
+    </div>
+    <div class="container-fluid" style="background-image: url('white2.jpg');">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row header" data-aos="fade-up" data-aos-once="true">
+                    <div class="col-md-2"><img style="width:200px; background-color:white;margin-top: -20px;
     padding: 24px 16px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;" src="logo.PNG"></div>
-		<div class="col-md-10" style="padding:10px 0px 0px 50px;">
-                     <nav class="navbar navbar-default" style="font-size:1.2em;background-color: #ffffff00;border-color: #ffffff00;">
-              <div class="container-fluid"  style="float:right;">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+                    <div class="col-md-10" style="padding:10px 0px 0px 50px;">
+                        <nav class="navbar navbar-default" style="font-size:1.2em;background-color: #ffffff00;border-color: #ffffff00;">
+                            <div class="container-fluid" style="float:right;">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a class="a" href="#">Home<span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#myModal">Make an Appointment</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </nav>
+                    </div>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a class="a" href="#">Home<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                                 <li><a href="#" data-toggle="modal" data-target="#myModal">Make an Appointment</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                           </div>
-                           <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container" style="color:white;padding-top:100px ;padding-bottom:150px;max-width:100%;background-size:150%;background-position: -10px 0px">
+                <div class="row">
+                    <div class="col-md-4" style="position:static">
+                        <div class="space3d">
+                            <div class="_3dbox">
+                                <div class="_3dface _3dface--front" id="front"><span>CONSULTING</span></div>
+                                <div class="_3dface _3dface--top" id="top"><span>MENTORING</span></div>
+                                <div class="_3dface _3dface--bottom"> <span>MENTORING</span></div>
+                                <div class="_3dface _3dface--left" id="left"><span>COACHING</span></div>
+                                <div class="_3dface _3dface--right" id="right"> <span>COACHING</span></div>
+                                <div class="_3dface _3dface--back" id="right2"><span>MENTORING</span></div>
+                            </div>
                         </div>
-                        <!-- /.container-fluid -->
-            </nav>  
+                    </div>
+                    <div class="col-md-8" style="color: #314150;">
+                        <div class="col-md-12" id="fyd" style="text-align: center;color: #314150;">
+                            <h3 style="font-size: 58px;font-family: Calibri;font-weight:900">FOLLOW YOUR</h3>
+                            <h1 style="font-size: 120px;font-family: Calibri;font-weight:900">DREAM</h1>
+                        </div>
+                        <div class="col-md-12" id="desc1">
+                            <h2>Consulting</h2> Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
+                        </div>
+                        <div class="col-md-12" id="desc2">
+                            <h2>Mentoring</h2> Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
+                        </div>
+                        <div class="col-md-12" id="desc3">
+                            <h2>Coaching</h2> Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-	</div>
-</div>
-         <div class="container-fluid">
-<div class="container" style="color:white;padding-top:100px ;padding-bottom:150px;max-width:100%;background-size:150%;background-position: -10px 0px">
-  <div class="row">
-    <div class="col-md-4" style="position:static">
-        <div class="space3d">   
-              <div class="_3dbox">
-                <div class="_3dface _3dface--front" id="front" ><span>CONSULTING</span></div>
-                <div class="_3dface _3dface--top" id="top"><span>MENTORING</span></div>
-                <div class="_3dface _3dface--bottom"> <span>MENTORING</span></div>
-                <div class="_3dface _3dface--left" id="left"><span>COACHING</span></div>
-                <div class="_3dface _3dface--right" id="right"> <span>COACHING</span></div>
-                <div class="_3dface _3dface--back" id="right2"><span>MENTORING</span></div>
-              </div>
+    </div>
+    <div class="container text-center">
+        <h1 style="font-size: 50px;margin-top: 40px;margin-bottom:0px;padding: 30px;background-color: white;color: #d07c04;border-bottom: 2px solid #d07c04;" data-aos="fade-right" data-aos-once="true">Services</h1>
+        <div class="row">
+            <div class="col-md-4" style="height: 300px;background-color: white;">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
+                        <img src="coaching.png" style="height:150px;margin-top:20px;margin-left:15px;">
+                        <h4 style="color:#d07c04;margin-top: 50px; ">Coaching</h4>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+            <div class="col-md-4 orange" style="height: 300px;background-color: white;">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-xs-8 col-xs-offset-2 " id="test" data-aos="fade-up" data-aos-once="true">
+                        <img src="mentoring.png" style="height: 136px;margin-top: 30px;">
+                        <h4 style="color:#d07c04;margin-top: 50px; ">Mentoring</h4>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+            <div class="col-md-4 white" style="height: 300px">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
+                        <img src="consulting.png" style="height: 165px;margin-top: 10px;">
+                        <h4 style="color:#d07c04;margin-top: 50px;">Consulting</h4>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col-md-8" style="color: #314150;">
-          <div class="col-md-12" id="fyd" style="text-align: center;color: #314150;">
-            <h3 style="font-size: 58px;font-family: Calibri;font-weight:900">FOLLOW YOUR</h3>
-            <h1 style="font-size: 120px;font-family: Calibri;font-weight:900">DREAM</h1>
-          </div>
-                     <div class="col-md-12" id="desc1">
-                        <h2>Consulting</h2>
-                        Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets. 
-                     </div>
-                     <div class="col-md-12" id="desc2" >
-                        <h2>Mentoring</h2>
-                        Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
-          </div>
-                     <div class="col-md-12" id="desc3">
-                        <h2>Coaching</h2>
-                        Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets.
-          </div>
-          </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="container text-center">
-  <h1 style="font-size: 50px;margin-top: 40px;margin-bottom:0px;padding: 30px;background-color: white;color: #d07c04;border-bottom: 2px solid #d07c04;" data-aos="fade-right" data-aos-once="true">Services</h1>
-    <div class="row">
-    <div class="col-md-4" style="height: 300px;background-color: white;">
-     <div class="row">
-       <div class="col-md-3"></div>
-       <div class="col-xs-8 col-xs-offset-2" id="test"  data-aos="fade-up" data-aos-once="true">
-        <img src="coaching.png" style="height:150px;margin-top:20px;margin-left:15px;">
-        <h4 style="color:#d07c04;margin-top: 50px; ">Coaching</h4>
-       </div>
-        <div class="col-md-3"></div>
-     </div>
-    </div>
-    <div class="col-md-4 orange" style="height: 300px;background-color: white;">
-      <div class="row">
-   <div class="col-md-3"></div>
-       <div class="col-xs-8 col-xs-offset-2 " id="test"  data-aos="fade-up" data-aos-once="true">
-        <img src="mentoring.png" style="height: 136px;margin-top: 30px;">
-        <h4 style="color:#d07c04;margin-top: 50px; ">Mentoring</h4>
-       </div>
-        <div class="col-md-3"></div>
-      </div>
-    </div>
-    <div class="col-md-4 white" style="height: 300px">
-      <div class="row">
-         <div class="col-md-3"></div>
-       <div class="col-xs-8 col-xs-offset-2" id="test"  data-aos="fade-up" data-aos-once="true">
-        <img src="consulting.png" style="height: 165px;margin-top: 10px;">
-        <h4 style="color:#d07c04;margin-top: 50px;">Consulting</h4>
-       </div>
-        <div class="col-md-3"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid surfacepro" style="background-image: url('micro.jpg');       background-position: -91px -363px;
+    <div class="container-fluid surfacepro" style="background-image: url('micro.jpg');       background-position: -91px -363px;
     background-repeat: no-repeat;
     background-size: 137% 177%;
     padding: 20px;
     margin-top: 50px;">
-<div class="container" >
-  <h1 style="padding: 30px;background-color: #white;font-size: 50px;color: white;"  data-aos="fade-right" data-aos-once="true">Turn your Dreams into Reality</h1>
-<div class="container" style="padding: 50px;">
-  <div class="container-fluid" style="padding: 20px;"></div>
-  <p style="line-height: 1.7;font-size: 18px;width:60%;color: white;">Have you been dragging your feet on the way to class lately? Do you daydream about rattling off phrases flawlessly in another language, or doing research at a field station deep in the middle of the rainforest?<br><br>
-                  There is  a reason that students who study abroad cannot stop talking about it. Spending time abroad not only fulfills academic goals, but also lets you experience a new culture, language, and environment. Nailing down all the details can seem overwhelming, but lucky for you, SENIORS is here to help!
-               </p>
-</div>
-</div>
-</div>
-<div class="container-fluid" style="padding: 0px;" >
-    <div class="container-fluid arrow" style="background-image: url('arr.jpg');
+        <div class="container">
+            <h1 style="padding: 30px;background-color: #white;font-size: 50px;color: white;" data-aos="fade-right" data-aos-once="true">Turn your Dreams into Reality</h1>
+            <div class="container" style="padding: 50px;">
+                <div class="container-fluid" style="padding: 20px;"></div>
+                <p style="line-height: 1.7;font-size: 18px;width:60%;color: white;">Have you been dragging your feet on the way to class lately? Do you daydream about rattling off phrases flawlessly in another language, or doing research at a field station deep in the middle of the rainforest?
+                    <br>
+                    <br> There is a reason that students who study abroad cannot stop talking about it. Spending time abroad not only fulfills academic goals, but also lets you experience a new culture, language, and environment. Nailing down all the details can seem overwhelming, but lucky for you, SENIORS is here to help!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding: 0px;">
+        <div class="container-fluid arrow" style="background-image: url('arr.jpg');
     background-size: 130% 173%;
     background-position: -192px -268px;">
-<div class="container" style="padding: 50px 0px;">
-  <h1 style="padding: 30px;font-size: 50px;color: #064684;" data-aos="fade-left" data-aos-once="true">WHY Seniors Global?</h1>
-<div class="container" style="padding: 20px;">
-  <div class="container-fluid" style="padding: 20px;"></div>
-  <p style="    line-height: 1.7;
+            <div class="container" style="padding: 50px 0px;">
+                <h1 style="padding: 30px;font-size: 50px;color: #064684;" data-aos="fade-left" data-aos-once="true">WHY Seniors Global?</h1>
+                <div class="container" style="padding: 20px;">
+                    <div class="container-fluid" style="padding: 20px;"></div>
+                    <p style="    line-height: 1.7;
     padding: 20px;
     padding-right: 350px;
     color: black;
     font-size: 18px;">Our mission is to turn dreams into reality. Every individual poses unique traits and personality. With our rich experience in Education, Coaching and Mentoring we have devised our own Personality and Psychometric Test to identify individual unique traits and personality. Based on the Test results students can choose the career path, in which they have natural flair. We place students in the best Universities /Colleges across the globe which suit their Academic Interest, and budgets. We help students to get maximum scholarships based on the Grades in the qualifying examinations.</p>
-</div>
-</div>
-</div>
-<div class="container-fluid" style="background-image: url('white1.jpg');    background-size: 100% 142%;
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-image: url('white1.jpg');    background-size: 100% 142%;
     background-repeat: no-repeat;">
-<div class="container" style="padding: 50px 20px;">
-  <div class="row">
-    <div class="col-md-4 text-center" style="
+            <div class="container" style="padding: 50px 20px;">
+                <div class="row">
+                    <div class="col-md-4 text-center" style="
       color: #034381;
     background-color: #ffffff82;
-    border: 1px solid #c1f7f9;"  data-aos="fade-left" data-aos-once="true">
-      <h3>Our Process</h3>
-      <i class="material-icons" style="font-size: 150px; padding: 52px;">settings</i>
-    </div>
-    <div class="col-md-8" style="border: 1px solid #c3f9f9; "  data-aos="fade-right" data-aos-once="true">
-      <ul style="line-height: 3;font-size: 25px;">
-        <li>Personality Test</li>
-        <li>Differentiate between Passion, Hobby, and Career</li>
-        <li>Career Test</li>
-        <li>Coaching for Entrance Exam and University Interview</li>
-      </ul>
-    </div>
-  </div>
-  </div>
-</div>
-</div>
-<div class="container-fluid" style="background-image: url('white3.png');    background-size: cover;
-    background-repeat: no-repeat;">
-<div class="container" style="margin-top: 50px">
-  <h1 style="padding: 30px;text-align: center;border-bottom: 2px solid #27594e;font-size: 50px;color: #27594e;"  data-aos="fade-left" data-aos-once="true">Find Your Program</h1>
-<div class="container-fluid" style="padding: 20px;">
-  <div class="container-fluid" style="padding: 20px;">
-    <div class="row">
-		<div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
-			<div class="col-md-12" style="padding: 0px;">
-				<img src="undergraduate.png" style="height: 310px;width: 300px;">
-				<div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
-			</div>
-		</div>
-
-      	<div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
-        	<div class="col-md-12" style="padding: 0px;">
-          		<img src="undergraduate.png" style="height: 310px;width: 300px;">
-          		<div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
-        	</div>
-	    </div>
-
-      	<div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
-        	<div class="col-md-12" style="">
-          		<img src="undergraduate.png" style="height: 310px;width: 300px;">
-        		<div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
-        	</div>
+    border: 1px solid #c1f7f9;" data-aos="fade-left" data-aos-once="true">
+                        <h3>Our Process</h3>
+                        <i class="material-icons" style="font-size: 150px; padding: 52px;">settings</i>
+                    </div>
+                    <div class="col-md-8" style="border: 1px solid #c3f9f9; " data-aos="fade-right" data-aos-once="true">
+                        <ul style="line-height: 3;font-size: 25px;">
+                            <li>Personality Test</li>
+                            <li>Differentiate between Passion, Hobby, and Career</li>
+                            <li>Career Test</li>
+                            <li>Coaching for Entrance Exam and University Interview</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  </div>
-</div>
-<div class="container-fluid" style="background-image: url('map1.png');">
-  <div class="container" style="margin-top: 40px" >
-    <h1 style="padding: 30px;text-align: center;border-bottom: 2px solid #d07c04;font-size: 50px;color: #d07c04;"  data-aos="fade-left" data-aos-once="true">STUDY IN</h1>
-    <div class="container-fluid" >
-    <div class="row" style="padding: 20px;">
-      <div class="col-md-3 text-center">
-        <figure data-aos="fade-up" data-aos-once="true">
-          <img src="singapore1.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>Singapore</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure data-aos="fade-up" data-aos-once="true">
-          <img src="australia.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>Australia</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure data-aos="fade-up" data-aos-once="true">
-          <img src="uae.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>UAE</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-         <figure data-aos="fade-up" data-aos-once="true">
-          <img src="india.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>INDIA</figcaption>
-      </div>
+    <div class="container-fluid" style="background-image: url('white3.png');    background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container" style="margin-top: 50px">
+            <h1 style="padding: 30px;text-align: center;border-bottom: 2px solid #27594e;font-size: 50px;color: #27594e;" data-aos="fade-left" data-aos-once="true">Find Your Program</h1>
+            <div class="container-fluid" style="padding: 20px;">
+                <div class="container-fluid" style="padding: 20px;">
+                    <div class="row">
+                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
+                            <div class="col-md-12" style="padding: 0px;">
+                                <img src="undergraduate.png" style="height: 310px;width: 300px;">
+                                <div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
+                            <div class="col-md-12" style="padding: 0px;">
+                                <img src="undergraduate.png" style="height: 310px;width: 300px;">
+                                <div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
+                            <div class="col-md-12" style="">
+                                <img src="undergraduate.png" style="height: 310px;width: 300px;">
+                                <div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row" style="padding: 20px;">
-      <div class="col-md-3 text-center">
-        <figure data-aos="fade-up" data-aos-once="true">
-          <img src="canada.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>CANADA</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-           <figure data-aos="fade-up" data-aos-once="true">
-          <img src="malaysia.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>MALAYSIA</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure data-aos="fade-up" data-aos-once="true">
-          <img src="swiss.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>SWITZERLAND</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-          <figure data-aos="fade-up" data-aos-once="true">
-          <img src="uk.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>UK</figcaption>
-      </div>
+    <div class="container-fluid" style="background-image: url('map1.png');">
+        <div class="container" style="margin-top: 40px">
+            <h1 style="padding: 30px;text-align: center;border-bottom: 2px solid #d07c04;font-size: 50px;color: #d07c04;" data-aos="fade-left" data-aos-once="true">STUDY IN</h1>
+            <div class="container-fluid">
+                <div class="row" style="padding: 20px;">
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="singapore1.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>Singapore</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="australia.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>Australia</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="uae.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>UAE</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="india.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>INDIA</figcaption>
+                    </div>
+                </div>
+                <div class="row" style="padding: 20px;">
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="canada.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>CANADA</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="malaysia.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>MALAYSIA</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="swiss.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>SWITZERLAND</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="uk.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>UK</figcaption>
+                    </div>
+                </div>
+                <div class="row" style="padding: 20px;">
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="germany.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>GERMANY</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="new.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>NEW ZEALAND</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="turkey.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>TURKEY</figcaption>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure data-aos="fade-up" data-aos-once="true">
+                            <img src="usa.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
+                        </figure>
+                        <figcaption>USA</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row" style="padding: 20px;">
-      <div class="col-md-3 text-center">
-        <figure data-aos="fade-up" data-aos-once="true">
-          <img src="germany.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>GERMANY</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-            <figure data-aos="fade-up" data-aos-once="true">
-          <img src="new.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>NEW ZEALAND</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-            <figure data-aos="fade-up" data-aos-once="true">
-          <img src="turkey.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>TURKEY</figcaption>
-      </div>
-      <div class="col-md-3 text-center">
-        <figure data-aos="fade-up" data-aos-once="true">
-          <img src="usa.png" style="box-shadow: 0 0 10px 0px black;border-radius: 50%;">
-        </figure>
-        <figcaption>USA</figcaption>
-      </div>
+    <div class="container-fluid text-center">
+        <div class="container text-center" style="margin-top: 40px">
+            <h1 style="font-size: 50px;margin-top: 50px;margin-bottom:0px;padding: 30px;background-color: white;color: #034381;border-bottom: 2px solid #034381;" data-aos="fade-right" data-aos-once="true">SIEZE THE OPPORTUNITY</h1>
+            <div class="row">
+                <div class="col-md-4" id="1" style="height: 300px;background-color: white;">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
+                            <img src="study.png" style="height:150px;margin-top:20px;margin-left:15px;">
+                            <h4 style="color:#034381;margin-top: 50px; ">STUDY ABROAD</h4>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 orange" id="2" style="height: 300px;background-color: white;">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
+                            <img src="100.png" style="height: 136px;margin-top: 30px;">
+                            <h4 style="color:#034381;margin-top: 50px; ">100% SCHOLORSHIP</h4>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 white" id="3" style="height: 300px;background-color: white;">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
+                            <img src="internship.png" style="height: 165px;margin-top: 10px;">
+                            <h4 style="color:#034381;margin-top: 50px; ">INTERNSHIP PROGRAM</h4>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-</div>
-<div class="container-fluid text-center">
-  <div class="container text-center" style="margin-top: 40px">
-  <h1 style="font-size: 50px;margin-top: 50px;margin-bottom:0px;padding: 30px;background-color: white;color: #034381;border-bottom: 2px solid #034381;"  data-aos="fade-right" data-aos-once="true">SIEZE THE OPPORTUNITY</h1>
-    <div class="row">
-    <div class="col-md-4" id="1" style="height: 300px;background-color: white;">
-     <div class="row">
-       <div class="col-md-3"></div>
-       <div class="col-xs-8 col-xs-offset-2" id="test"  data-aos="fade-up" data-aos-once="true">
-        <img src="study.png" style="height:150px;margin-top:20px;margin-left:15px;">
-        <h4 style="color:#034381;margin-top: 50px; ">STUDY ABROAD</h4>
-       </div>
-        <div class="col-md-3"></div>
-     </div>
-    </div><div class="col-md-4 orange" id="2" style="height: 300px;background-color: white;">
-      <div class="row">
-   <div class="col-md-3"></div>
-       <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
-        <img src="100.png" style="height: 136px;margin-top: 30px;">
-        <h4 style="color:#034381;margin-top: 50px; ">100% SCHOLORSHIP</h4>
-       </div>
-        <div class="col-md-3"></div>
-      </div>
-    </div>
-    <div class="col-md-4 white" id="3" style="height: 300px;background-color: white;">
-      <div class="row">
-         <div class="col-md-3"></div>
-       <div class="col-xs-8 col-xs-offset-2" id="test" data-aos="fade-up" data-aos-once="true">
-        <img src="internship.png" style="height: 165px;margin-top: 10px;">
-        <h4 style="color:#034381;margin-top: 50px; ">INTERNSHIP PROGRAM</h4>
-       </div>
-        <div class="col-md-3"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
     <img src="http://unsplash.it/10/10/?random">
-  </div>
-</div>
-<div class="container-fluid text-center" style="    border-top: 2px solid #034381;
-    margin-top: 30px;padding:20px; ">
-  <div class="container">
-    <div class="row" style="padding-top: 40px;">
-      <div class="col-md-3">
-        <img src="british.png" width="250px;">
-      </div>
-      <div class="col-md-3" >
-        <img src="pier.png" width="200px;" >
-      </div>
-      <div class="col-md-3">
-        <img src="sp.png"width="200px;">
-      </div>
-      <div class="col-md-3">
-        <img src="zealand.png" width="200px;">
-      </div>
     </div>
-  </div>
-</div>
-<div class="container-fluid text-center" style="background-color: #2b2b2b;">
-  <p style="    
+    </div>
+    <div class="container-fluid text-center" style="    border-top: 2px solid #034381;
+    margin-top: 30px;padding:20px; ">
+        <div class="container">
+            <div class="row" style="padding-top: 40px;">
+                <div class="col-md-3">
+                    <img src="british.png" width="250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="pier.png" width="200px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="sp.png" width="200px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="zealand.png" width="200px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center" style="background-color: #2b2b2b;">
+        <p style="    
     padding: 30px;
     color: white;">© 2018 Seniors Global. All Rights Reserved</p>
-</div>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-         <div class="modal-dialog modal-dialog-centered">
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <!-- Modal content-->
             <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title text-center">Make an Appointment</h4>
-               </div>
-               <div class="modal-body">
-                  <form onsubmit="event.preventDefault()">
-                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
-                     </div>
-                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                     </div>
-                     <div class="form-group">
-                        <input type="text" class="form-control" id="num" placeholder="Enter your number" name="num">
-                     </div>
-                     <div class="form-group" style="text-align: center;">
-                        <input type="submit" class="btn btn-success" id="submit" value="Submit">
-                     </div>
-                  </form>
-               </div>
-              
-               <p id="success" style="display: none;    text-align: center;
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">Make an Appointment</h4>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="event.preventDefault()">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="num" placeholder="Enter your number" name="num">
+                        </div>
+                        <div class="form-group" style="text-align: center;">
+                            <input type="submit" class="btn btn-success" id="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+
+                <p id="success" style="display: none;    text-align: center;
     font-size: 30px;
     padding: 100px 0px;">Appointment made successfully</p>
             </div>
-         </div>
-      </div>
+        </div>
+    </div>
 
 </body>
 <script>
-  $(window).scrollTop(0);
-  $("body").css({overflowY:'hidden'});
-  $("._3dbox").addClass("cuberotate");
-  $(".space3d").css({zoom:'0.8'});
-  $(".loaderimage").css({display:"none"});
-
-  $(window).on("load",function(){
-    //alert("hello");
     $(window).scrollTop(0);
-    $("body").css({overflowY:'visible'});
-    $("._3dbox").removeClass("cuberotate");
-    $(".space3d").animate({left:'20%'},'slow',function(){
-        $(".space3d").addClass('space3d-static');
+    $("body").css({
+        overflowY: 'hidden'
     });
-    //$(".space3d").css({position: "static"});
-   /*(".preloader").animate({top:'-1000px'},'slow',function() {
-        $(".preloader").hide();
-    });*/
-    $(".leftscreen").animate({left:"-100%"},'slow',function(){
-        $(".leftscreen").css({display:"none"});
-        $(".rightscreen").css({display:"none"});
-        $(".preloader").css({display:"none"});
+    $("._3dbox").addClass("cuberotate");
+    $(".space3d").css({
+        zoom: '0.8'
     });
-    $(".rightscreen").animate({right:"-100%"},'slow');
-    $(".loaderimage").css({display:"none"});
-	$("#front span").hover(function(){
-        //$("._3dbox").removeClass('cuberotate');
-		$("._3dbox").css({ transform:'rotateX(-360deg)'});
-		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
-		$("#fyd").hide('slow');
-		$("#desc1").show();1
-	});
+    $(".loaderimage").css({
+        display: "none"
+    });
 
-	$("#top span").hover(function(){
-        //$("._3dbox").removeClass('cuberotate');      
-		$("._3dbox").css({ transform:'rotateX(-90deg)'});
-		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
-		$("#fyd").hide('slow');
-		$("#desc2").show();
-	});
-
-	$("#left span").hover(function(){
-        //$("._3dbox").removeClass('cuberotate');  
-		$("._3dbox").css({ transform:'rotateY(+90deg)'});
-		$(".space3d").animate({ zoom:'1',marginTop:'50px',marginLeft:' 45%'},'slow');
-		$("#fyd").hide('slow');
-		$("#desc3").show();   
-	});
-
-
-	$(".space3d").mouseleave(function(){
-		$("#fyd").delay('1500').show('slow');
-		$("#desc1").delay('500').hide();
-		$("#desc2").delay('500').hide();
-		$("#desc3").delay('500').hide();
-		$(".space3d").delay(50).animate({ zoom:'0.8',marginLeft:' 45%',marginTop:'1%;'},'200',function(){
-		  $("._3dbox").css({ transform:'rotateX(-30deg) rotateY(+45deg)'});
-            //$("._3dbox").addClass('cuberotate');
+    $(window).on("load", function() {
+        //alert("hello");
+        $(window).scrollTop(0);
+        $("body").css({
+            overflowY: 'visible'
         });
-	});
-//});
+        $("._3dbox").removeClass("cuberotate");
+        $(".space3d").animate({
+            left: '20%'
+        }, 'slow', function() {
+            $(".space3d").addClass('space3d-static');
+        });
+        //$(".space3d").css({position: "static"});
+        /*(".preloader").animate({top:'-1000px'},'slow',function() {
+             $(".preloader").hide();
+         });*/
+        $(".leftscreen").animate({
+            left: "-100%"
+        }, 'slow', function() {
+            $(".leftscreen").css({
+                display: "none"
+            });
+            $(".rightscreen").css({
+                display: "none"
+            });
+            $(".preloader").css({
+                display: "none"
+            });
+        });
+        $(".rightscreen").animate({
+            right: "-100%"
+        }, 'slow');
+        $(".loaderimage").css({
+            display: "none"
+        });
+        $("#front span").hover(function() {
+            //$("._3dbox").removeClass('cuberotate');
+            $("._3dbox").css({
+                transform: 'rotateX(-360deg)'
+            });
+            $(".space3d").animate({
+                zoom: '1',
+                marginTop: '50px',
+                marginLeft: ' 45%'
+            }, 'slow');
+            $("#fyd").hide('slow');
+            $("#desc1").show();
+            1
+        });
 
- 
-       $("#submit").click(function(){
+        $("#top span").hover(function() {
+            //$("._3dbox").removeClass('cuberotate');      
+            $("._3dbox").css({
+                transform: 'rotateX(-90deg)'
+            });
+            $(".space3d").animate({
+                zoom: '1',
+                marginTop: '50px',
+                marginLeft: ' 45%'
+            }, 'slow');
+            $("#fyd").hide('slow');
+            $("#desc2").show();
+        });
 
+        $("#left span").hover(function() {
+            //$("._3dbox").removeClass('cuberotate');  
+            $("._3dbox").css({
+                transform: 'rotateY(+90deg)'
+            });
+            $(".space3d").animate({
+                zoom: '1',
+                marginTop: '50px',
+                marginLeft: ' 45%'
+            }, 'slow');
+            $("#fyd").hide('slow');
+            $("#desc3").show();
+        });
+
+        $(".space3d").mouseleave(function() {
+            $("#fyd").delay('1500').show('slow');
+            $("#desc1").delay('500').hide();
+            $("#desc2").delay('500').hide();
+            $("#desc3").delay('500').hide();
+            $(".space3d").delay(50).animate({
+                zoom: '0.8',
+                marginLeft: ' 45%',
+                marginTop: '1%;'
+            }, '200', function() {
+                $("._3dbox").css({
+                    transform: 'rotateX(-30deg) rotateY(+45deg)'
+                });
+                //$("._3dbox").addClass('cuberotate');
+            });
+        });
+        //});
+
+        $("#submit").click(function() {
 
             $(".modal-body").hide();
             $("#success").show();
         });
-      
-});
-$(function() {
-  AOS.init();
-});
-      
+
+    });
+    $(function() {
+        AOS.init();
+    });
 </script>
+
 </html>
