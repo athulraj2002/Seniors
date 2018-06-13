@@ -222,17 +222,14 @@ li a:hover{
 }
 
 #test:hover{
- 
-  cursor: pointer;
+   cursor: pointer;
    box-shadow: 13px 12px 15px 0px #7474747a;
-   margin-left: 0px;
    margin-top: 45px;
-   transition: all linear .2s;
 }
 #test{
   height: 200px;
   margin-top: 50px;
-  
+   //transition: all linear .2s;
   border-radius: 20px;
   box-shadow: 4px 4px 15px 0px #7474747a;
 }
