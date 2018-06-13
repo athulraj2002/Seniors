@@ -145,16 +145,15 @@ background: url('face.jpg');
 }
 
 li.active .a.a{
-    color: #fff;
-  background-color:orange;
-    border-bottom: 4px solid white;
+    background-color: #ffffff00;
+    border-bottom: 4px solid orange;
 }
 li.active .a.a:hover{
-  background-color:orange;
-    border-bottom: 4px solid white;
+    background-color: #ffffff00;
+    border-bottom: 4px solid orange;
 }
 li a:hover{
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid orange;
 }
 .preloader{
   width:100%;
@@ -304,4 +303,16 @@ figcaption{
     overflow-x: hidden;
     overflow-y: hidden;
   }
+}.modal-header{
+  background-color: orange;
+  color: white;
+}
+.form-group{
+  margin-top: 20px;
+}
+form{
+  padding: 20px;
+}
+#submit{
+  text-align: center;
 }
