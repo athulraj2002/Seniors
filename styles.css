@@ -220,12 +220,12 @@ nav li a:hover{
   animation: cuberotate 5s linear infinite;
 }
 
-#test:hover{
+.test:hover{
    cursor: pointer;
    box-shadow: 13px 12px 15px 0px #7474747a;
    margin-top: 45px;
 }
-#test{
+.test{
   height: 200px;
   margin-top: 50px;
    //transition: all linear .2s;
@@ -315,4 +315,11 @@ form{
 }
 #submit{
   text-align: center;
+}.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #fff;
+  margin-left: 43%;
 }
