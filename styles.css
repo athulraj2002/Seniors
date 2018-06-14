@@ -144,15 +144,15 @@ background: url('face.jpg');
     padding-top:20px;
 }
 
-li.active .a.a{
+nav li.active .a.a{
     background-color: #ffffff00;
     border-bottom: 4px solid orange;
 }
-li.active .a.a:hover{
+nav li.active .a.a:hover{
     background-color: #ffffff00;
     border-bottom: 4px solid orange;
 }
-li a:hover{
+nav li a:hover{
     border-bottom: 4px solid orange;
 }
 .preloader{

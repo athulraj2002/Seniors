@@ -141,7 +141,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid surfacepro" style="/*background-image: url('micro.jpg'); */ background-color:#080c15; background-position: -91px -363px;
+    <div class="container-fluid surfacepro" style="/*background-image: url('micro.jpg');  background-color:#080c15; */background-color:#405fa2;background-position: -91px -363px;
     background-repeat: no-repeat;
     background-size: 137% 177%;
     padding: 20px;
@@ -154,7 +154,7 @@
             <h1 style="padding-bottom:50px;font-size: 50px;color: white;">Turn your Dreams into Reality</h1>Have you been dragging your feet on the way to class lately? Do you daydream about rattling off phrases flawlessly in another language, or doing research at a field station deep in the middle of the rainforest?
                     <br>
                     <br> There is a reason that students who study abroad cannot stop talking about it. Spending time abroad not only fulfills academic goals, but also lets you experience a new culture, language, and environment. Nailing down all the details can seem overwhelming, but lucky for you, SENIORS is here to help!</div>
-                        <div class="col-md-4 col-md-offset-1"  data-aos="fade-left" data-aos-once="true"><img style="max-width:100%"src="dreamicon.png"></div>
+                        <div class="col-md-4 col-md-offset-1"  data-aos="fade-left" data-aos-once="true"><img style="padding-top:54px;max-width:100%" src="edupic2.png"></div>
                 </div>
             </div>
         </div>
@@ -163,7 +163,7 @@
     background-position: -192px -268px;*/ background-color:#f29105">
             <div class="container" style="padding: 80px 20px">
                     <div class="row">
-                        <div class="col-md-5"  data-aos="fade-right" data-aos-once="true"><img style="max-width:100%" src="teamicon2.png"></div>
+                        <div class="col-md-5"  data-aos="fade-right" data-aos-once="true"><img style="max-width:100%" src="group.png"></div>
                         <div class="col-md-6 col-md-offset-1" style= "line-height: 1.7;
     color: white;
     font-size: 18px;" data-aos="fade-left" data-aos-once="true">
@@ -195,30 +195,24 @@
         </div>
     <div class="container-fluid" style="/*background-image: url('white3.png');    background-size: cover;
     background-repeat: no-repeat;*/ background-color: #f29105;">
-        <div class="container" style="padding: 50px 0px">
-            <h1 style="padding: 30px;text-align: center;border-bottom: 2px solid white;font-size: 50px;color: white;" data-aos="fade-left" data-aos-once="true">Find Your Program</h1>
-            <div class="container-fluid" style="padding: 20px;">
-                <div class="container-fluid" style="padding: 20px;">
-                    <div class="row">
-                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
-                            <div class="col-md-12" style="padding: 0px;">
-                                <img src="undergraduate.png" style="height: 310px;width: 300px;">
-                                <div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
-                            <div class="col-md-12" style="padding: 0px;">
-                                <img src="undergraduate.png" style="height: 310px;width: 300px;">
-                                <div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true">
-                            <div class="col-md-12" style="">
-                                <img src="undergraduate.png" style="height: 310px;width: 300px;">
-                                <div class="col-md-12 new" style="width: 200px;height: 50px;">UNDERGRADUATE</div>
-                            </div>
+        <div class="container" style="padding: 80px 0px">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+            <h1 style="padding: 0px 0px 40px 0px;text-align: center;border-bottom: 0px solid white;font-size: 50px;color: white;" data-aos="fade-left" data-aos-once="true">Find Your Training Course/Programs</h1>
+                    <div class="input-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%;height:50px">
+                            Search programs
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width:100%">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                        <div class="input-group-btn">
+                            <button name="submit" class="form-control btn btn-primary" style="height:50px;padding:0px 40px">Go</button>
                         </div>
                     </div>
                 </div>
@@ -524,6 +518,15 @@
         });
 
     });
+    $(function(){
+
+    $(".dropdown-menu").on('click', 'li a', function(e){
+        e.preventDefault();
+      $(".btn.dropdown-toggle").text($(this).text());
+      $(".btn.dropdown-toggle").val($(this).text());
+   });
+
+});
     $(function() {
         AOS.init();
     });
