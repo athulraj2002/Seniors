@@ -99,27 +99,27 @@ div:after{
 
 
 ._3dface--front {
-  background: url('face.jpg');
+  background: url('images/face.jpg');
   background-size: 100%;
 }
 ._3dface--left {
-background: url('face.jpg');
+background: url('images/face.jpg');
   background-size: auto 100%;
 }
 ._3dface--right {
-  background: url('face.jpg');
+  background: url('images/face.jpg');
   background-size: auto 100%;
 }
 ._3dface--top {
-  background: url('face.jpg');
+  background: url('images/face.jpg');
   background-size: auto 100%;
 }
 ._3dface--bottom {
-  background: url('face.jpg');
+  background: url('images/face.jpg');
   background-size: auto 100%;
 }
 ._3dface--back {
-  background: url('face.jpg');
+  background: url('images/face.jpg');
   background-size: auto 100%;
 }
 
