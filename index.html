@@ -106,33 +106,33 @@
             </div>
         </div>
     </div>
-    <div class="container text-center" style="padding-bottom: 20px;">
-        <h1 style="font-size: 50px;margin-top: 40px;margin-bottom:0px;padding: 30px;background-color: white;color: #d07c04;border-bottom: 2px solid #d07c04;" data-aos="fade-right" data-aos-once="true">Services</h1>
+    <div class="container text-center">
+        <h1 style="font-size: 50px;margin-top: 40px;margin-bottom:0px;padding: 30px;background-color: white;color: #d07c04;" data-aos="fade-right" data-aos-once="true">Services</h1>
         <div class="row">
-            <div class="col-md-4" style="height: 300px;background-color: white;">
+            <div class="col-md-4 bg" id="coa2">
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <div class="col-xs-8 col-xs-offset-2 test" id="coa" data-aos="fade-up" data-aos-once="true">
+                    <div class="col-xs-8 col-xs-offset-2 test" id="coa" data-aos="fade-up" data-aos-once="true" style="background-color: white;">
                         <img src="images/coaching.png" style="height:150px;margin-top:20px;margin-left:15px;">
                         <h4 style="color:#d07c04;margin-top: 50px; ">Coaching</h4>
                     </div>
                     <div class="col-md-3"></div>
                 </div>
             </div>
-            <div class="col-md-4 orange" style="height: 300px;background-color: white;">
+            <div class="col-md-4 orange" id="men2" style="height: 300px;">
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <div class="col-xs-8 col-xs-offset-2 test" id="men" data-aos="fade-up" data-aos-once="true">
+                    <div class="col-xs-8 col-xs-offset-2 test" id="men" data-aos="fade-up" data-aos-once="true" style="background-color: white;">
                         <img src="images/mentoring.png" style="height: 136px;margin-top: 30px;">
                         <h4 style="color:#d07c04;margin-top: 50px; ">Mentoring</h4>
                     </div>
                     <div class="col-md-3"></div>
                 </div>
             </div>
-            <div class="col-md-4 white" style="height: 300px">
+            <div class="col-md-4 white" id="con2" style="height: 300px">
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <div class="col-xs-8 col-xs-offset-2 test" id="con" data-aos="fade-up" data-aos-once="true">
+                    <div class="col-xs-8 col-xs-offset-2 test" id="con" data-aos="fade-up" data-aos-once="true" style="background-color: white;">
                         <img src="images/consulting.png" style="height: 165px;margin-top: 10px;">
                         <h4 style="color:#d07c04;margin-top: 50px;">Consulting/Training</h4>
                     </div>
@@ -141,7 +141,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="coa1" style="    background-color: orange;">
+    <div class="container-fluid" id="coa1" style="    background-color: #faf2e4;">
       <div class="container">
       <div class="row">
             <div class="col-md-4 text-center">
@@ -159,7 +159,7 @@
        </div>
     </div>
 
-   <div class="container-fluid" id="men1" style="    background-color: orange;display: none;">
+   <div class="container-fluid" id="men1" style="    background-color: #faf2e4;display: none;">
       <div class="container">
       <div class="row">
             <div class="col-md-4 text-center">
@@ -178,7 +178,7 @@
 
        </div>
     </div>
-    <div class="container-fluid" id="con1" style="    background-color: orange;display: none;">
+    <div class="container-fluid" id="con1" style="    background-color: #faf2e4;display: none;">
       <div class="container">
       <div class="row">
             <div class="col-md-4 text-center">
@@ -662,16 +662,32 @@
         $("#coa1").hide();
         $("#con1").hide();
         $('#men1').show();
+        $("#men2").removeClass("nobg");
+        $("#men2").addClass("bg");
+        $("#coa2").removeClass("bg");
+        $("#coa2").addClass("nobg");
+        $("#con2").removeClass("bg");
+        $("#con2").addClass("nobg");
+        
+
     });
     $("#coa").click(function(){
         $("#coa1").show();
         $("#con1").hide();
         $('#men1').hide();
+        $("#men2").removeClass("bg");
+        $("#con2").removeClass("bg");
+        $("#coa2").removeClass("nobg");
+        $("#coa2").addClass("bg");
     });
     $("#con").click(function(){
         $("#coa1").hide();
         $("#con1").show();
         $('#men1').hide();
+        $("#con2").removeClass("nobg");
+        $("#con2").addClass("bg");
+        $("#coa2").addClass("nobg");
+        $("#men2").addClass("nobg");
     });
 
 });
