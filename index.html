@@ -515,6 +515,18 @@
                         <div class="form-group">
                             <input type="text" class="form-control" id="num" placeholder="Enter your number" name="num">
                         </div>
+                        <div class="input-group" style="display: block;">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%;height:50px">
+                                Search coaching type
+                            <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width:100%">
+                                <li><a href="#">Career coaching (one-one session)</a></li>
+                                <li><a href="#">Career coaching (group session)</a></li>
+                                <li><a href="#">Parental coaching (one-one session)</a></li>
+                                <li><a href="#">Parental coaching (group session)</a></li>
+                            </ul>
+                        </div>
                         <div class="form-group" style="text-align: center;">
                             <input type="submit" class="btn btn-success" id="submit" value="Submit">
                         </div>
@@ -649,8 +661,8 @@
 
     $(".dropdown-menu").on('click', 'li a', function(e){
         e.preventDefault();
-      $(".btn.dropdown-toggle").text($(this).text());
-      $(".btn.dropdown-toggle").val($(this).text());
+        $(this).parent().parent().prevAll("button.dropdown-toggle:first").text($(this).text());
+        $(this).parent().parent().prevAll("button.dropdown-toggle:first").val($(this).text());
    });
 
 });
