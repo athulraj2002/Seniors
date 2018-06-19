@@ -33,6 +33,21 @@
         <div class="leftscreen"></div>
         <div class="rightscreen"></div>
     </div>
+    <div class="container-fluid newsbar">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 newstile">
+                        <ul>
+                            <li>Get earlybird discount now! 50% OFF!!!<div class="btn btn-success">Get It</div></li>
+                            <li>Another Offer!!!<div class="btn btn-success">Get It</div></li>
+                            <li>Yet another offer!!!<div class="btn btn-success">Get It</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid" style="background-image: url('images/yellow1.jpg');">
         <div class="container-fluid">
             <div class="container">
@@ -73,7 +88,7 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="container" style="color:white;padding-top:100px ;padding-bottom:150px;max-width:100%;background-size:150%;background-position: -10px 0px">
+            <div class="container" style="color:white;padding-top:63px ;padding-bottom:150px;max-width:100%;background-size:150%;background-position: -10px 0px">
                 <div class="row">
                     <div class="col-md-4" style="position:static">
                         <div class="space3d">
@@ -687,7 +702,23 @@
             $(".modal-body").hide();
             $("#success").show();
         });
-
+                
+                /***fading slider****/
+        var n=0;
+        var fadeDuration=500;
+        var delay=5000;
+        var newslength=$(".newstile ul li").length;
+        $(".newstile ul li:gt(0)").css('display','none');
+        function fade(){
+            n=n+1;
+            k=$(".newstile ul li:nth-child("+n+")");
+            if(n==newslength){n=0;}
+            l=$(".newstile ul li:nth-child("+(n+1)+")");
+            k.fadeOut(fadeDuration,function(){
+                l.fadeIn(fadeDuration,function(){setTimeout(fade,delay);});
+            });
+        }
+        setTimeout(fade,delay);
     });
     $(function(){
 

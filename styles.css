@@ -171,6 +171,7 @@ nav li a:hover{
 .loaderimage{
   position: relative;
   z-index:10000;
+  display: none;
 }
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
@@ -303,14 +304,16 @@ figcaption{
   h1{
     padding:0px !important;
   }
-  .container{
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
   .footer{
     text-align:center;
   }
-}.modal-header{
+}
+.container,.container-fluid{
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.modal-header{
   background-color: orange;
   color: white;
 }
@@ -372,4 +375,34 @@ form{
 }
 #coa1,#men1,#con1{
   font-size:18px;
+}
+.newsbar{
+  padding:0px;
+}
+@media screen and (min-width:600px){
+.newsbar .container-fluid{
+  position: fixed;
+  width:100%;
+}
+.newsbar{
+  height: 37px;
+}
+}
+.newsbar .container-fluid{
+  background-color: #314150;
+  color:white;
+  font-size: 18px;
+  text-align: center;
+  z-index:900;
+}
+.newsbar .container{
+  padding:6px 0px;
+}
+
+.newstile ul{
+  list-style-type: none;
+  margin: 0px;
+}
+.newstile ul .btn{
+  margin-left: 10px;
 }
