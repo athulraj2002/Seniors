@@ -406,3 +406,22 @@ form{
 .newstile ul .btn{
   margin-left: 10px;
 }
+.modal-lg{
+  width:1200px; 
+}
+#myModal1 p{
+  padding: 10px;
+}
+#myModal1 h3{
+  color: orange;
+}
+#myModal1 h4{
+  color: #03A9F4;
+}
+#myModal2 li::first-letter {
+  font-weight: bold;
+  color: orange;
+}
+#myModal2 li{
+  padding: 10px;
+}
