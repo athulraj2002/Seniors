@@ -418,7 +418,7 @@ form{
 #myModal1 h4{
   color: #03A9F4;
 }
-#myModal2 li::first-letter {
+#firstcolor li::first-letter {
   font-weight: bold;
   color: orange;
 }
