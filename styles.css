@@ -425,4 +425,6 @@ form{
 }
 #myModal2 li{
   padding: 10px;
+}.slides {
+  display:none;
 }

@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
     <!-- Latest compiled JavaScript -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -444,7 +445,7 @@
     margin-top: 30px;padding:80px 0px;background-color: #ffffff8f ">
         <div class="container">
          <h1 style="color: orange;">Our Associates</h1>
-            <div class="row" style="padding-top: 40px;">
+            <div class="row slides" style="padding-top: 40px;">
                 <div class="col-md-3">
                     <img src="images/sp.png" width="200px;">
                 </div>
@@ -458,7 +459,7 @@
                     <img src="images/manipal.png" width="200px;">
                 </div>
             </div>
-            <div class="row" style="padding-top: 40px;">
+            <div class="row slides" style="padding-top: 40px;">
                 <div class="col-md-3">
                     <img src="images/glion.png" width="200px;">
                 </div>
@@ -472,7 +473,7 @@
                     <img src="images/castel.png" width="200px;">
                 </div>
             </div>
-            <div class="row" style="padding-top: 40px;">
+            <div class="row slides" style="padding-top: 40px;">
                 <div class="col-md-3">
                     <img src="images/it.png" width="200px;">
                 </div>
@@ -489,7 +490,7 @@
                     <img src="images/woll.png" width="120px;">
                 </div>
             </div>
-            <div class="row" style="padding-top: 40px;">
+            <div class="row slides" style="padding-top: 40px;">
                <div class="col-md-6">
                   <img src="images/gmu.png" width="320px;">
                </div>
@@ -830,6 +831,23 @@
     });
 
 });
+
+//slideshow
+
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
 </script>
 
 </html>
