@@ -235,9 +235,18 @@ nav li a:hover{
   margin-top: 50px;
    //transition: all linear .2s;
   border-radius: 20px;
-  box-shadow: 1px 1px 9px 0px #7474747a;
-  background-color: white
+ box-shadow: 3px 5px 9px 0px #747474;
+    background-color: #2196f35c;
 }
+.test1{
+  height: 200px;
+  margin-top: 50px;
+   //transition: all linear .2s;
+  border-radius: 20px;
+ box-shadow: 3px 5px 9px 0px #747474;
+    background-color: white;
+}
+
 
 .new{
       width: 200px;
@@ -338,7 +347,7 @@ form{
   background-color:#f29105;
   color:white;
   font-size: 18px;
-  border-top:10px solid #344f8c;
+  
 }
 .footer .container{
   padding:80px 0px;
