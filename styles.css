@@ -236,6 +236,7 @@ nav li a:hover{
    //transition: all linear .2s;
   border-radius: 20px;
   box-shadow: 1px 1px 9px 0px #7474747a;
+  background-color: white
 }
 
 .new{
