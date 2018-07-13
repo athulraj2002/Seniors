@@ -437,7 +437,7 @@
             </div>
         </div>
     </div>
-    <img src="http://unsplash.it/10/10/?random">
+    <!--<img src="http://unsplash.it/10/10/?random">-->
     <div class="container-fluid text-center" style="padding:80px 0px;background-color: #ffffff8f ">
         <div class="container">
          <h1 style="color: orange;">Our Associates</h1>
@@ -506,11 +506,16 @@
                 </div>
                 <div class="col-md-3 ftab">
                     <h3>
-                        Address
+                        Address<br>
+                        <span id="address1">UAE</span> | <span id="address2">India</span> | <span id="address3">Egypt</span><br>
                     </h3>
-                    <p>
+                    <p id="addressdesc1">USA Regional Trade Center,<br> Sharjah - UAE
+                    </p>
+                    <p id="addressdesc2" style="display: none">
                         1234 Street Name
                     <br>City, AA 99999
+                    </p>
+                    <p id="addressdesc3" style="display: none">2BNasr Rd., Nasr city, <br>Cairo- Egypt 
                     </p>
                 </div>
                 <div class="col-md-3 ftab">
@@ -825,7 +830,41 @@
         $("#coa2").addClass("nobg");
         $("#men2").addClass("nobg");
     });
-
+    $("#address1").css("color","white");
+    $("#address1").css("text-decoration","underline");
+    $("#address1").click(function(){
+        $(this).css("color","white");
+        $("#address2").css("color","#fad39b");
+        $("#address2").css("text-decoration","none");
+        $("#address3").css("color","#fad39b");
+        $("#address3").css("text-decoration","none");
+        $(this).css("text-decoration","underline");
+        $("#addressdesc1").css("display","block");
+        $("#addressdesc2").css("display","none");
+        $("#addressdesc3").css("display","none");
+    })
+    $("#address2").click(function(){
+        $(this).css("color","white");
+        $("#address1").css("color","#fad39b");
+        $("#address1").css("text-decoration","none");
+        $("#address3").css("color","#fad39b");
+        $("#address3").css("text-decoration","none");
+        $(this).css("text-decoration","underline");
+        $("#addressdesc1").css("display","none");
+        $("#addressdesc2").css("display","block");
+        $("#addressdesc3").css("display","none");
+    })
+    $("#address3").click(function(){
+        $(this).css("color","white");
+        $("#address1").css("color","#fad39b");
+        $("#address1").css("text-decoration","none");
+        $("#address2").css("color","#fad39b");
+        $("#address2").css("text-decoration","none");
+        $(this).css("text-decoration","underline");
+        $("#addressdesc1").css("display","none");
+        $("#addressdesc2").css("display","none");
+        $("#addressdesc3").css("display","block");
+    })
 });
 
 //slideshow

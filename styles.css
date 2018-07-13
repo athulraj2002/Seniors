@@ -439,3 +439,8 @@ form{
 }.slides {
   display:none;
 }
+#address1,#address2,#address3{
+  font-size:21px !important;
+  color:#fad39b;
+  cursor: pointer;
+}
