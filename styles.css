@@ -397,6 +397,11 @@ form{
 .newsbar{
   height: 37px;
 }
+
+.modal-lg{
+  width:1200px; 
+}
+
 }
 .newsbar .container-fluid{
   background-color: #314150;
@@ -415,9 +420,6 @@ form{
 }
 .newstile ul .btn{
   margin-left: 10px;
-}
-.modal-lg{
-  width:1200px; 
 }
 #myModal1 p{
   padding: 10px;
