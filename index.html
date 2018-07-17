@@ -253,7 +253,7 @@
                             <li><a href="#">Course2</a></li>
                         </ul>
                         <div class="input-group-btn">
-                            <button name="submit" class="form-control btn btn-primary" style="height:50px;padding:0px 40px">Go</button>
+                            <a href="#" class="form-control btn btn-primary" data-toggle="modal" data-target="#coursemodal" style="height:50px;padding:15px 40px">Go</a>
                         </div>
                     </div>
                 </div>
@@ -534,7 +534,7 @@
                     <h3>
                         Get in Touch
                     </h3>
-                    <p>+(00971) 5 88135353
+                    <p>+971 588135353
                     </p>
                 </div>
                 <div class="col-md-3 ftab">
@@ -664,6 +664,63 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="coursemodal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center" data-toggle="modal" data-target="#myModal">Register for course</h4>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="event.preventDefault()">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="num" placeholder="Enter your number" name="num">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="num" placeholder="Enter your address" name="num">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="num" placeholder="Enter your Country" name="num">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="num" placeholder="Enter your Profession" name="num">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="num" placeholder="Enter your Major" name="num">
+                    </div>
+                    <!--<div class="input-group" style="display: block;">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%;height:50px">
+                            Search coaching type
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width:100%">
+                            <li><a href="#">Career coaching (one-one session)</a></li>
+                            <li><a href="#">Career coaching (group session)</a></li>
+                            <li><a href="#">Parental coaching (one-one session)</a></li>
+                            <li><a href="#">Parental coaching (group session)</a></li>
+                        </ul>
+                    </div>-->
+                    <div class="form-group" style="text-align: center;">
+                        <input type="submit" class="btn btn-success" id="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <p id="success" style="display: none;    text-align: center;
+font-size: 30px;
+padding: 100px 0px;">Appointment made successfully</p>
+        </div>
+    </div>
+</div>
 </div>
 </body>
 <script>
