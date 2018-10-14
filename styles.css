@@ -454,3 +454,7 @@ form{
 .row.stemal{
   margin-bottom: 150px;
 }
+iframe{
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
